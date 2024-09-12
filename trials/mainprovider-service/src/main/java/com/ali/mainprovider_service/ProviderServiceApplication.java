@@ -18,7 +18,7 @@ public class ProviderServiceApplication {
 
     private final RestTemplate restTemplate;
 
-    // Constructor injection for RestTemplate
+   
     public ProviderServiceApplication(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
@@ -27,7 +27,7 @@ public class ProviderServiceApplication {
         SpringApplication.run(ProviderServiceApplication.class, args);
     }
 
-    // Bean definition for RestTemplate
+    
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
